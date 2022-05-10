@@ -1,0 +1,172 @@
+body {
+
+    background:linear-gradient(#609ED4, #052051);
+    
+
+}
+.cabeça {
+    width: 940px;
+    margin-top: 20px;
+
+    
+}
+
+.imagem {
+    position:relative;
+    text-align:left;
+    padding: 15px 0 0 0;
+ 
+         
+}
+
+.nome-titulo{
+    width: 75%;
+    display: inline;
+    font-size: 40px;
+    padding: 0 0 0 340px;
+    color: ;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.principal{
+   
+    width: 940px;
+    margin:  auto;
+    margin-top: 40px;
+}
+
+.texto01 {
+    
+    display: inline-block;
+    text-align: center;
+
+}
+.entradatexto{
+    background:linear-gradient(#609ED4,#052051);
+    padding: 10px 35px;
+    width: 50%;
+    border-radius: 30px;
+    border: none;
+
+}
+.regra {
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;    
+}
+
+.resultado {
+     
+    
+    display: inline-block;
+    text-align: center;
+    
+
+}
+
+.imagem-boneco {
+    position: absolute;
+    left: 650px;
+    top: 155px;
+
+
+
+}
+.texto-final {
+
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.saidatexto {
+
+    background:linear-gradient(#609ED4,#052051);
+
+    padding: 10px 35px;
+    width: 50%;
+    border-radius: 30px;
+    border: none;
+   
+}
+
+.mensagem-2 {
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic; 
+}
+.botoes {
+    width: 940px;
+    
+}
+
+.botaoc {
+    margin: 10px 20px 0 40px ;
+    width: 20%;
+    padding:15px 0 ;
+    background: #495057;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 2s all;
+    cursor: pointer; 
+    border: none;
+}
+.botaoc:hover {
+    background: #ADB5BD;
+    
+}
+.botaode {
+    width: 20%;
+    padding:15px 0 ;
+    background: #495057;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 2s all;
+    cursor: pointer;
+    border: none;
+}
+.botaode:hover {
+    background: #ADB5BD;
+
+}
+
+.botaoco{
+    margin:10px 0 0 123px ;
+    width: 20%;
+    padding:15px 0 ;
+    background: #495057;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 2s all;
+    cursor: pointer;
+    border: none;
+}
+
+.botaoco:hover {
+    background: #ADB5BD;
+}
+footer{
+
+}
+.copyright{
+    text-align: center;
+    margin-top: 13px;
+    font-size: 19px;
+    background: #052051;
+     font-weight: bold;
+    font-style: italic;
+
+}
+.copyright:hover {
+    color:#ADB5BD ;
+
+}
