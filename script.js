@@ -6,6 +6,14 @@
             var regex = /^[a-z\s\0-9\,\.\;\:\?\(\)\-\_\/]+$/;
             var imagem = document.querySelector (".imagem-boneco");
             var textoFinal = document.querySelector (".texto-final");
+            var nomes = new Map();
+                
+                nomes.set("e","enter");
+                nomes.set("i","imes");
+                nomes.set("o","ober");
+                nomes.set("a","ai");
+                nomes.set("u","ufat");
+
             encriptar.focus();
 
             copiar.style.display = "none";
@@ -24,20 +32,16 @@
             }
     
             function texto1(){       
-                   
                 var mensagem = encriptar.value;
-                
-                var novaMensagem1 = mensagem.replaceAll("e", "enter");
-                novaMensagem2 = novaMensagem1.replaceAll("i", "imes");
-                novaMensagem3 = novaMensagem2.replaceAll("a", "ai");
-                novaMensagem4 = novaMensagem3.replaceAll("o","ober");
-                novaMensagem5 = novaMensagem4.replaceAll("u", "ufat");        
-                        
-                resultado.value = novaMensagem5;
+
+                for(var [key,value] of nomes){
+                    mensagem = mensagem.replaceAll(key,value);   
+               }                   
+                resultado.value = mensagem;
 
                 imagem.style.display = 'none';
-            textoFinal.style.display = 'block';
-            copiar.style.display = "inline";
+                textoFinal.style.display = 'block';
+                copiar.style.display = "inline";
 
 
             
@@ -47,16 +51,12 @@
             }
                
             function decodificarTexto (){
-
                 var mensagem = encriptar.value;
-
-                var novaMensagem1 = mensagem.replaceAll("enter","e");
-                novaMensagem2 = novaMensagem1.replaceAll("imes", "i");
-                novaMensagem3 = novaMensagem2.replaceAll("ai", "a");
-                novaMensagem4 = novaMensagem3.replaceAll("ober","o");
-                novaMensagem5 = novaMensagem4.replaceAll("ufat", "u");        
-                        
-                resultado.value = novaMensagem5;
+                
+                for(var [key,value] of nomes){
+                    mensagem = mensagem.replaceAll(value,key);   
+               }
+                resultado.value = mensagem;
 
                 limpaTexto();
                 encriptar.focus();
