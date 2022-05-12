@@ -11,6 +11,7 @@ body {
     padding: 15px 0 0 0;        
 }
 .nome-titulo{
+    text-align: center;
     width: 75%;
     display: inline;
     font-size: 40px;
