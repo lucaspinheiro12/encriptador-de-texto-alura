@@ -60,12 +60,20 @@
 
                 limpaTexto();
                 encriptar.focus();
+
+                imagem.style.display = 'none';
+                textoFinal.style.display = 'block';
+                copiar.style.display = "inline";
             }
 
             function copiarTexto(){
                 var textoCriptografado = resultado.value
                 navigator.clipboard.writeText(textoCriptografado);
                 encriptar.focus();
+
+                copiar.style.display = "none";
+                imagem.style.display = "block";
+                textoFinal.style.display = "none";
             } 
             
             function limpaTexto(){
