@@ -71,7 +71,9 @@
                 navigator.clipboard.writeText(textoCriptografado);
                 encriptar.focus();
 
-
+                copiar.style.display = "none";
+                imagem.style.display = "block";
+                textoFinal.style.display = "none";
             } 
             
             function limpaTexto(){
