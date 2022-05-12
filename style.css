@@ -1,5 +1,4 @@
 body {
-
     background:linear-gradient(#609ED4, #052051);
 }
 .cabeça {
@@ -20,14 +19,12 @@ body {
     font-style: italic;
     font-weight: bold;
 }
-.principal{
-   
+.principal{  
     width: 940px;
     margin:  auto;
     margin-top: 40px;
 }
 .texto01 {
-    
     display: inline-block;
     text-align: center;
 }
@@ -54,14 +51,11 @@ body {
     top: 155px;
 }
 .texto-final {
-
     display: inline-block;
     text-align: center;
 }
 .saidatexto {
-
     background:linear-gradient(#609ED4,#052051);
-
     padding: 10px 35px;
     width: 50%;
     border-radius: 30px;
