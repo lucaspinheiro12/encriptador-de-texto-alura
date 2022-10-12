@@ -7,28 +7,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet"href="style.css">
-        <script src="script.js" defer ></script>
-
         <title> Encriptador de Texto </title>               
     </head>
-      
     <body>
         <header class="cabeça">
             <div  class="logo-alura">
-
                 <a href="https://www.alura.com.br/"><img class="imagem" src="alura.png" alt="Logo Alura"></a>
             </div>
-            <h1 class="nome-titulo">Encriptador de Texto</h1>
+            <div class="titulo">
+                <h1 class="nome-titulo">Encriptador de Texto</h1>
+            </div>
         </header>
-
         <main class="principal">
-            <section>
-
+            <section class="input-texto">
                 <div class="texto01">
                     <textarea cols="48" rows="25"  type="text" class="entradatexto" placeholder="digite aqui seu texto" style="resize: none" ></textarea>
                     <p class="regra">⚠ Somente letras minúsculas e sem acento.</p>  
                 </div>
-
                 <div class="resultado">
                     <div class="imagem-boneco">
                         <img class="boneco" src="imagem.png">
@@ -36,23 +31,22 @@
                     <div class="texto-final">        
                         <textarea cols="48" rows="25" class="saidatexto" placeholder="mensagem criptografada" style="resize:none"></textarea>
                         <p class="mensagem-2">✦Resultado do Texto.</p>
-                    </div>
-                    
-            
+                    </div>     
                 </div>
             </section>              
-       
-            <div class="botoes">
-                <button  class="botaoc">Criptografar</button>
-                <button class="botaode">Descriptografar</button>
-                <button class="botaoco">Copiar</button>
-            </div>
+            <section  class="botoes">
+                <div class="botao-criptografar">
+                    <button  class="botaoc">Criptografar</button>
+                    <button class="botaode">Descriptografar</button>
+                </div>
+                <div class="botao-copiar">
+                    <button class="botaoco">Copiar</button>
+                </div>    
+            </section>  
         </main> 
         <footer>
-             <p class="copyright"> &copy;Desenvolvido por: Lucas Pinheiro-2022</p>
-
-        </footer>   
-         
-        
+            <p class="copyright"> &copy;Desenvolvido por: Lucas Pinheiro-2022</p>
+        </footer>    
     </body>
+    <script src="script.js"></script>
 </html>

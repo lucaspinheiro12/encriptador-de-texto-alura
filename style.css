@@ -2,31 +2,34 @@ body {
     background:linear-gradient(#609ED4, #052051);
 }
 .cabeça {
-    width: 940px;
-    margin-top: 20px;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 35px;
 }
-.imagem {
-    position:relative;
-    text-align:left;
-    padding: 15px 0 0 0;        
+
+.titulo{
+    width: 85%;
+    text-align: center;
+
 }
-.nome-titulo{
-    width: 75%;
-    display: inline;
+.nome-titulo{    
     font-size: 40px;
-    padding: 0 0 0 340px;
     font-style: italic;
     font-weight: bold;
 }
+
 .principal{  
-    width: 940px;
-    margin:  auto;
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.input-texto{
+    display: flex;
+    justify-content: space-around;
 }
 .texto01 {
-    display: inline-block;
     text-align: center;
 }
+
 .entradatexto{
     background:linear-gradient(#609ED4,#052051);
     padding: 10px 35px;
@@ -40,17 +43,12 @@ body {
     font-weight: bold;
     font-style: italic;    
 }
-.resultado {   
-    display: inline-block;
-    text-align: center;
-}
+
 .imagem-boneco {
-    position: absolute;
-    left: 650px;
-    top: 155px;
+    margin-right: 40px;
+    margin-top: 25px;
 }
 .texto-final {
-    display: inline-block;
     text-align: center;
 }
 .saidatexto {
@@ -66,8 +64,9 @@ body {
     font-weight: bold;
     font-style: italic; 
 }
+
 .botoes {
-    width: 940px;   
+   display: flex; 
 }
 .botaoc {
     margin: 10px 20px 0 40px ;
